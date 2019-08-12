@@ -12,7 +12,7 @@ return [
     | your application here. By default, Laravel is setup for SMTP mail.
     |
     | Supported: "smtp", "sendmail", "mailgun", "mandrill", "ses",
-    |            "sparkpost", "postmark", "log", "array"
+    |            "sparkpost", "log", "array"
     |
     */
 
@@ -90,19 +90,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Sendmail System Path
-    |--------------------------------------------------------------------------
-    |
-    | When using the "sendmail" driver to send e-mails, we will need to know
-    | the path to where Sendmail lives on this server. A default path has
-    | been provided here, which will work well on most of your systems.
-    |
-    */
-
-    'sendmail' => '/usr/sbin/sendmail -bs',
-
-    /*
-    |--------------------------------------------------------------------------
     | Markdown Mail Settings
     |--------------------------------------------------------------------------
     |
@@ -119,18 +106,5 @@ return [
             resource_path('views/vendor/mail'),
         ],
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Log Channel
-    |--------------------------------------------------------------------------
-    |
-    | If you are using the "log" driver, you may specify the logging channel
-    | if you prefer to keep mail messages separate from other log entries
-    | for simpler reading. Otherwise, the default channel will be used.
-    |
-    */
-
-    'log_channel' => env('MAIL_LOG_CHANNEL'),
 
 ];

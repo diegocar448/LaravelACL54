@@ -1,4 +1,5 @@
-const mix = require('laravel-mix');
+const { mix } = require('laravel-mix');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +12,27 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.webpackConfig({
+  plugins:[
+    new BrowserSyncPlugin({
+      files:[
+        '**/*.css',
+        '**/*.js',
+        '**/*.php'
+      ]
+    },{reload:false})
+  ]
+});
+
+mix.combine([
+  'resources/assets/js/jquery.js',
+  'resources/assets/js/materialize.js',
+  'resources/assets/js/init.js'
+], 'public/js/app.js');
+
+mix.combine([
+  'resources/assets/css/materialize.css',
+  'resources/assets/css/style.css'
+],'public/css/app.css');
+
+mix.disableNotifications();

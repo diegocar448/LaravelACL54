@@ -16,3 +16,14 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/carros',function(){
+  $carros = App\Carro::all();
+  foreach ($carros as $carro) {
+    $carro->valor_format = number_format($carro->valor,2,",",".");
+    $carro->marca;
+    $carro->categorias;
+    $carro->imagens;
+  }
+  return $carros;
+});
