@@ -18,7 +18,7 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-    © 2019 Copyright {{config('app.logoSite')}}
+    © 2019 Laravel
     <a class="grey-text text-lighten-4 right" href="#!">Diego Cardoso</a>
     </div>
   </div>
