@@ -98,8 +98,8 @@ Route::get('/addgalerias', function () {
 Route::get('/', function () {
     $slides = [
       (object)[
-        'titulo'=>'Título Imagem',
-        'descricao'=>'Descrição Imagem',
+        'titulo'=>'Título ',
+        'descricao'=>'Descrição ',
         'url'=>'#link',
         'imagem'=>'https://moriohcdn.b-cdn.net/19b5f9d0b2.png'
 
@@ -108,59 +108,59 @@ Route::get('/', function () {
 
     $carros = [
       (object)[
-        'titulo' => 'Nome do Carro',
-        'descricao' => 'Descrição do Carro',
+        'titulo' => 'Titulo qualquer',
+        'descricao' => 'Descrição qualquer',
         'imagem' => 'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2017/09/Why_Laravel.jpg',
-        'valor' => 'R$150.000,00',
+        'valor' => 'R$0,00',
         'url' => url('detalhe')
       ],
       (object)[
-        'titulo' => 'Nome do Carro',
-        'descricao' => 'Descrição do Carro',
+        'titulo' => 'Titulo qualquer',
+        'descricao' => 'Descrição qualquer',
         'imagem' => 'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2017/09/Why_Laravel.jpg',
-        'valor' => 'R$150.000,00',
+        'valor' => 'R$0,00',
         'url' => url('detalhe')
       ],
       (object)[
-        'titulo' => 'Nome do Carro',
-        'descricao' => 'Descrição do Carro',
+        'titulo' => 'Titulo qualquer',
+        'descricao' => 'Descrição qualquer',
         'imagem' => 'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2017/09/Why_Laravel.jpg',
-        'valor' => 'R$150.000,00',
+        'valor' => 'R$0,00',
         'url' => url('detalhe')
       ],
       (object)[
-        'titulo' => 'Nome do Carro',
-        'descricao' => 'Descrição do Carro',
+        'titulo' => 'Titulo qualquer',
+        'descricao' => 'Descrição qualquer',
         'imagem' => 'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2017/09/Why_Laravel.jpg',
-        'valor' => 'R$150.000,00',
+        'valor' => 'R$0,00',
         'url' => url('detalhe')
       ],
       (object)[
-        'titulo' => 'Nome do Carro',
-        'descricao' => 'Descrição do Carro',
+        'titulo' => 'Titulo qualquer',
+        'descricao' => 'Descrição qualquer',
         'imagem' => 'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2017/09/Why_Laravel.jpg',
-        'valor' => 'R$150.000,00',
+        'valor' => 'R$0,00',
         'url' => url('detalhe')
       ],
       (object)[
-        'titulo' => 'Nome do Carro',
-        'descricao' => 'Descrição do Carro',
+        'titulo' => 'Titulo qualquer',
+        'descricao' => 'Descrição qualquer',
         'imagem' => 'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2017/09/Why_Laravel.jpg',
-        'valor' => 'R$150.000,00',
+        'valor' => 'R$0,00',
         'url' => url('detalhe')
       ],
       (object)[
-        'titulo' => 'Nome do Carro',
-        'descricao' => 'Descrição do Carro',
+        'titulo' => 'Titulo qualquer',
+        'descricao' => 'Descrição qualquer',
         'imagem' => 'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2017/09/Why_Laravel.jpg',
-        'valor' => 'R$150.000,00',
+        'valor' => 'R$0,00',
         'url' => url('detalhe')
       ],
       (object)[
-        'titulo' => 'Nome do Carro',
-        'descricao' => 'Descrição do Carro',
+        'titulo' => 'Titulo qualquer',
+        'descricao' => 'Descrição qualquer',
         'imagem' => 'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2017/09/Why_Laravel.jpg',
-        'valor' => 'R$150.000,00',
+        'valor' => 'R$0,00',
         'url' => url('detalhe')
       ]
   ];
@@ -173,7 +173,7 @@ Auth::routes();
 Route::get('/contato',function(){
   $galeria = [
     (object)[
-      'imagem'=>'http://st.automobilemag.com/uploads/sites/11/2016/02/2017-Chevrolet-Camaro-1LE-homepage.jpg'
+      'imagem'=>'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2017/09/Why_Laravel.jpg'
     ]
   ];
   return view('site.contato',compact('galeria'));
@@ -181,7 +181,7 @@ Route::get('/contato',function(){
 Route::get('/detalhe',function(){
   $galeria = [
     (object)[
-      'imagem'=>'http://st.automobilemag.com/uploads/sites/11/2016/02/2017-Chevrolet-Camaro-1LE-homepage.jpg'
+      'imagem'=>'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2017/09/Why_Laravel.jpg'
     ]
   ];
   return view('site.detalhe',compact('galeria'));
@@ -189,7 +189,7 @@ Route::get('/detalhe',function(){
 Route::get('/empresa',function(){
   $galeria = [
     (object)[
-      'imagem'=>'http://st.automobilemag.com/uploads/sites/11/2016/02/2017-Chevrolet-Camaro-1LE-homepage.jpg'
+      'imagem'=>'https://www.tristatetechnology.com/tristate-website/blog/wp-content/uploads/2017/09/Why_Laravel.jpg'
     ]
   ];
   return view('site.empresa',compact('galeria'));
