@@ -64,7 +64,7 @@ Route::get('/testesregistros', function () {
   $usuario = App\User::find(1);
   //dd($usuario->carros);
 
-  dd($carro->imagens);
+  $carro->imagens;
 
 
 });
@@ -96,6 +96,8 @@ Route::get('/addgalerias', function () {
 
 
 Route::get('/', function () {
+
+  
     $slides = [
       (object)[
         'titulo'=>'Título ',
